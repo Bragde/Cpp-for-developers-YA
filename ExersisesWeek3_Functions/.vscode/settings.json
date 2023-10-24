@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "string": "cpp"
+    },
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "c:\\Dev\\Cpp\\Cpp-for-developers-YA\\ExersisesWeek3_Functions",
+            "binaryPath": "c:\\Dev\\Cpp\\Cpp-for-developers-YA\\ExersisesWeek3_Functions\\program",
+            "binaryArgs": []
+        }
+    ]
+}
