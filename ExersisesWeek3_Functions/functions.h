@@ -9,7 +9,7 @@ string getAgeMessage(int year);
 int countNumbers(string input);
 string generateName(string firstName, string lastName);
 bool isWoman(long long pnr);
-int findLongestWord(vector<string> words);
+tuple<string, unsigned int> getLongestWord(vector<string> words);
 
 bool isEven(int number);
 int getLastDigit(int number);

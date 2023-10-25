@@ -8,11 +8,11 @@ using namespace std;
 
 int main()
 {
-    // function_one();
-    // function_two();
-    // function_three();
-    // function_four();
-    function_five();
+    function_one();
+    function_two();
+    function_three();
+    function_four();
+    function_five_six();
 
     return 0;
 }

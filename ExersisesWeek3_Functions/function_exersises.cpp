@@ -1,8 +1,8 @@
 #include <string>
 #include <vector>
 #include <iostream>
-#include "functions.h"
 #include <sstream>
+#include "functions.h"
 
 using namespace std;
 
@@ -49,7 +49,7 @@ void function_four()
     cout << "Person number ending in " << personNumber << sfix;
 }
 
-void function_five()
+void function_five_six()
 {
     // Enter som words from the cli and put them in a stringstream
     cout << "Enter some words: ";
@@ -63,8 +63,8 @@ void function_five()
     while (ss >> word)
         words.push_back(word);
 
-    auto length = findLongestWord(words);
+    auto [longestWord, length] = getLongestWord(words);
 
-    auto sfix = length == 1 ? " character " : " characters ";
-    cout << "The longest word is " << length << sfix << "long.";
+    string sfix = length == 1 ? " character " : " characters ";
+    cout << "The longest word is \"" << longestWord << "\", and it is " << length << sfix << "long.";
 }
