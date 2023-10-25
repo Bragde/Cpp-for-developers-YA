@@ -2,15 +2,17 @@
 #define _FUNC_H_
 
 #include <string>
-
-using std::string;
+#include <vector>
+using namespace std;
 
 string getAgeMessage(int year);
 int countNumbers(string input);
 string generateName(string firstName, string lastName);
-bool isWoman(int pnr);
+bool isWoman(long long pnr);
 int findLongestWord(vector<string> words);
+
 bool isEven(int number);
 int getLastDigit(int number);
+int getDigitInPos(int number, int position);
 
 #endif

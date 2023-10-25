@@ -2,6 +2,7 @@
 #include <vector>
 #include <iostream>
 #include "functions.h"
+#include <sstream>
 
 using namespace std;
 
@@ -44,21 +45,26 @@ void function_four()
     cout << "Enter last four digits of person number: ";
     getline(cin, personNumber);
 
-    auto sfix = isWoman(stoi(personNumber)) ? " is a woman." : " is not a woman.";
+    auto sfix = isWoman(stoll(personNumber)) ? " is a woman." : " is not a woman.";
     cout << "Person number ending in " << personNumber << sfix;
 }
 
 void function_five()
 {
-    // string words;
-    // cout << "Enter some words: ";
-    // getline(cin, words);
+    // Enter som words from the cli and put them in a stringstream
+    cout << "Enter some words: ";
+    string sentence;
+    getline(cin, sentence);
+    stringstream ss(sentence);
 
-    // istream wrd;
+    // Convert stringstream to vector<string>
+    string word;
+    vector<string> words;
+    while (ss >> word)
+        words.push_back(word);
 
-    // vector<string> wordsVector;
-    // for (auto w : words)
-    //     wordsVector.push_back(w);
+    auto length = findLongestWord(words);
 
-    // findLongestWord(wordsVector)
+    auto sfix = length == 1 ? " character " : " characters ";
+    cout << "The longest word is " << length << sfix << "long.";
 }

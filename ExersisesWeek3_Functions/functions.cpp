@@ -29,15 +29,15 @@ string generateName(string firstName, string lastName)
     return firstName + " " + lastName;
 }
 
-bool isWoman(int pnr)
+bool isWoman(long long pnr)
 {
-    auto lastDigit = getLastDigit(pnr);
-    return !isEven(lastDigit);
+    auto digit = getDigitInPos(pnr, 10);
+    return isEven(digit);
 }
 
 int findLongestWord(vector<string> words)
 {
-    auto longestWord = 0;
+    unsigned int longestWord = 0;
     for (auto s : words)
     {
         if (s.length() > longestWord)
@@ -50,3 +50,12 @@ int findLongestWord(vector<string> words)
 bool isEven(int number) { return number % 2 == 0; }
 
 int getLastDigit(int number) { return number % 10; }
+
+/// @brief
+/// @param number Number to get digit from.
+/// @param position Declare position as 1, 10 , 100 etc.
+/// @return
+int getDigitInPos(int number, int position)
+{
+    return (number / position % 10);
+}
