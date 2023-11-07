@@ -1,0 +1,9 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "c:\\Dev\\Cpp\\Cpp-for-developers-YA\\ExercisesWeek4",
+            "binaryPath": "c:\\Dev\\Cpp\\Cpp-for-developers-YA\\ExercisesWeek4\\program",
+            "binaryArgs": []
+        }
+    ]
+}
