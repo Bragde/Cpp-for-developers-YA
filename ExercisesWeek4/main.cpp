@@ -58,7 +58,6 @@ struct Student
 // void InputStudent(Student &p)
 // {
 //     cout << "Firstname: ";
-//     // getline(cin, p->firstName); // Problem här vid 2a anropet. getline reagerar som om det redan fans input från kbord och hoppar över Firstname.
 //     cin >> p.firstName;
 //     cout << "Lastname: ";
 //     cin >> p.lastName;
@@ -87,10 +86,10 @@ struct Student
 #pragma endregion Exercise_1c
 
 //  EXERCISE 2
+#pragma region Exercise_2
 void InputStudent(Student &p)
 {
     cout << "Firstname: ";
-    // getline(cin, p->firstName); // Problem här vid 2a anropet. getline reagerar som om det redan fans input från kbord och hoppar över Firstname.
     cin >> p.firstName;
     cout << "Lastname: ";
     cin >> p.lastName;
@@ -136,3 +135,4 @@ int main()
     cout << "The oldest student is:" << endl;
     PrintStudent(oldestStudent);
 }
+#pragma endregion Exercise_2
