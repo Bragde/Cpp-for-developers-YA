@@ -1,5 +1,5 @@
 PROG = program
-SRC = main.o student.o
+SRC = main.o
 CC = g++
 CFLAGS= -c -Wall
 
